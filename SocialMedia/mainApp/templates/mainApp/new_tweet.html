@@ -1,0 +1,15 @@
+{% extends "mainApp/base.html" %}
+
+{% block content %}
+
+<p>type new tweet</p>
+
+<form action="{% 'mainApp:new_tweet' %}" method='post'>
+
+
+{{ forms.as_p }}
+
+<button name="submit">post</button>
+</form>
+
+{% endblock content %}

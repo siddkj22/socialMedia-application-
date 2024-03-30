@@ -1,0 +1,16 @@
+{% extends "mainApp/base.html" %}
+
+{% block content %}
+
+<p> #hashtags</p>
+
+<ul>
+    {% for twit in twits %}
+    <li>{{ twit }}</li>
+    {% empty %}
+    <li>No tweets</li>
+    {% endfor %}
+
+</ul>
+
+{% endblock content %}
